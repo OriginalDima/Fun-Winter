@@ -29,7 +29,6 @@ img {
 
 .header {
   background: #262626;
-  position: sticky;
   top: 0rem;
   width: 100%;
   display: flex;
@@ -144,7 +143,8 @@ img {
   padding: 1rem;
   display: inherit;
   justify-content: flex-end;
-  width: 6rem;
+  width: 8rem;
+  font-size: 1.5rem;
 }
 .nav-mobile-width .nav-mobile-width__sign-up:hover {
   background: #2fb45a;
@@ -296,7 +296,7 @@ footer .footer-link-name:hover {
   color: #fff;
 }
 
-/*Rosponsive for tablet*/
+/*Responsive for tablet*/
 @media screen and (max-width: 768px) {
   .main-container {
     grid-template-columns: 1fr 2fr;
@@ -311,7 +311,7 @@ footer .footer-link-name:hover {
     flex-direction: column;
   }
 }
-/*Rosponsive for mobile*/
+/*Responsive for mobile*/
 @media screen and (max-width: 500px) {
   .main-container {
     grid-template-columns: 1fr;
