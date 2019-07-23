@@ -1,0 +1,349 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+}
+
+p {
+  padding: 0 0 1rem 0;
+  font-family: Futura, Arial, Sans-serif;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.header {
+  background: #262626;
+  position: sticky;
+  top: 0rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+}
+.header .header-icon {
+  display: inherit;
+  align-items: center;
+}
+.header .header-icon .header-icon__image {
+  width: 2.5rem;
+}
+.header .nav-laptop-width {
+  display: inherit;
+  align-items: baseline;
+}
+.header .nav-laptop-width .nav-laptop-width-radius-and-padding {
+  border-radius: 0.5rem;
+}
+.header .nav-laptop-width .nav-laptop-width__link_icon {
+  width: 1.6rem;
+  margin-right: 0.3rem;
+}
+.header .nav-laptop-width .nav-laptop-width__link {
+  border: 2px solid #404040;
+  color: #fff;
+  padding: 0.5rem;
+}
+.header .nav-laptop-width .nav-laptop-width__signUp {
+  margin: 0 1rem;
+  background: #2fb45a;
+  color: black;
+  padding: 0.7rem;
+}
+.header .nav-laptop-width .nav-laptop-width__logIn {
+  background: #404040;
+  color: #fff;
+  padding: 0.7rem;
+}
+.header .nav-laptop-width .nav-laptop-width__link:hover,
+.header .nav-laptop-width .nav-laptop-width__signUp:hover,
+.header .nav-laptop-width .nav-laptop-width__logIn:hover {
+  text-decoration: none;
+}
+.header .nav-laptop-width .nav-laptop-width__link:hover,
+.header .nav-laptop-width .nav-laptop-width__logIn:hover {
+  background: #545759;
+  color: #fff;
+}
+.header .nav-laptop-width .nav-laptop-width__signUp:hover {
+  background: #2ec75f;
+  color: black;
+}
+.header .nav-btn {
+  display: none;
+  cursor: pointer;
+}
+.header .nav-btn .nav-btn__line {
+  position: relative;
+  display: block;
+  width: 20px;
+  height: 3px;
+  background: #2fb45a;
+  opacity: 1;
+  transition: 0.25s ease-in-out;
+  transform-origin: left center;
+}
+.header .nav-btn .nav-btn__line:nth-child(1) {
+  top: 6px;
+}
+.header .nav-btn .nav-btn__line:nth-child(2) {
+  top: 8px;
+}
+.header .nav-btn .nav-btn__line:nth-child(3) {
+  top: 10px;
+}
+.header .open .nav-btn__line:nth-child(1) {
+  transform: rotate(45deg);
+  top: 3px;
+  margin-left: 5px;
+}
+.header .open .nav-btn__line:nth-child(2) {
+  opacity: 0;
+}
+.header .open .nav-btn__line:nth-child(3) {
+  transform: rotate(-45deg);
+  top: 11px;
+  margin-left: 5px;
+}
+
+.nav-mobile-width {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  transition: 0.5s;
+  transform-origin: right top;
+  transform: scaleY(0) translateX(15%);
+}
+.nav-mobile-width .nav-mobile-width__sign-up,
+.nav-mobile-width .nav-mobile-width__log-in,
+.nav-mobile-width .nav-mobile-width__link {
+  background: #262626;
+  color: #fff;
+  padding: 1rem;
+  display: inherit;
+  justify-content: flex-end;
+  width: 6rem;
+}
+.nav-mobile-width .nav-mobile-width__sign-up:hover {
+  background: #2fb45a;
+  color: #fff;
+  text-decoration: none;
+}
+.nav-mobile-width .nav-mobile-width__log-in:hover,
+.nav-mobile-width .nav-mobile-width__link:hover {
+  background: #545759;
+  color: #fff;
+  text-decoration: none;
+}
+.nav-mobile-width .nav__link_icon {
+  width: 1.6rem;
+  margin-right: 0.3rem;
+}
+
+.nav-mobile-width-active {
+  transform: scaleY(1);
+}
+
+.main-head {
+  grid-area: main-head;
+}
+
+.article-left {
+  grid-area: article-left;
+}
+
+.article-right {
+  grid-area: article-right;
+}
+
+.main-slider {
+  grid-area: main-slider;
+}
+
+.main-article {
+  grid-area: main-article;
+}
+
+.main-pictures {
+  grid-area: main-pictures;
+}
+
+.main-bottom-article {
+  grid-area: main-bottom-article;
+}
+
+footer {
+  grid-area: footer;
+}
+
+.main-container {
+  transition: 0.5s;
+  margin-top: -10.7rem;
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-areas: "main-head main-head main-head" "article-left main-slider article-right" "article-left main-article article-right" "article-left main-pictures article-right" "article-left main-bottom-article  article-right" "footer footer footer";
+}
+.main-container .main-head {
+  text-align: center;
+  padding: 3rem;
+}
+.main-container .main-head .main-head__title {
+  font-size: 7rem;
+  font-family: Monospace, Sans-Serif;
+  margin-bottom: 1.5rem;
+}
+.main-container .main-head .main-head__second-title {
+  font-size: 2.5rem;
+}
+.main-container .article-left,
+.main-container .article-right {
+  color: #fff;
+  padding: 1rem;
+}
+.main-container .article-left .title-snowboarding-and-skiing,
+.main-container .article-right .title-snowboarding-and-skiing {
+  font-family: Arial, Sans-Serif;
+  font-size: 1.7rem;
+  text-align: center;
+  margin: 0 0 2rem 0;
+}
+.main-container .article-left {
+  background: steelblue;
+}
+.main-container .article-right {
+  background: teal;
+}
+.main-container .main-article {
+  background: aliceblue;
+  padding: 0 3rem 2rem 3rem;
+}
+.main-container .main-article .main-article_title {
+  font-family: Futura, Arial, Sans-serif;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: 1rem;
+}
+.main-container .main-article .main-article__columns {
+  columns: 2;
+  grid-gap: 2rem;
+}
+.main-container .main-pictures {
+  display: flex;
+  background: #3E454C;
+  padding: 2rem;
+}
+.main-container .main-pictures .main-picture__item {
+  display: inherit;
+  flex-direction: column;
+  flex: 1;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+.main-container .main-pictures .main-picture__item .middle-article {
+  flex: 1;
+  background: #fff;
+  text-align: center;
+  padding: 1.5rem;
+}
+.main-container .main-bottom-article {
+  background: #f0f8ff;
+  padding: 0 3rem;
+}
+.main-container .main-bottom-article .main-bottom-article-title {
+  margin-top: 1rem;
+}
+
+.main-container-active {
+  margin-top: 0rem;
+}
+
+footer {
+  padding: 3rem;
+  background: #262626;
+  color: #fff;
+  font-size: 1.5rem;
+}
+footer .footer-link-name {
+  text-decoration: underline;
+  color: #fff;
+}
+footer .footer-link-name:hover {
+  color: #fff;
+}
+
+/*Rosponsive for tablet*/
+@media screen and (max-width: 768px) {
+  .main-container {
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: "main-head main-head" "article-left main-slider" "article-left main-article" "article-right main-pictures" "article-right main-bottom-article" "footer footer";
+  }
+
+  html {
+    font-size: 14px;
+  }
+
+  .main-pictures {
+    flex-direction: column;
+  }
+}
+/*Rosponsive for mobile*/
+@media screen and (max-width: 500px) {
+  .main-container {
+    grid-template-columns: 1fr;
+    grid-template-areas: "main-head" "main-slider" "article-left" "article-right" "main-article" "main-pictures" "main-bottom-article" "footer";
+  }
+
+  html {
+    font-size: 10px;
+  }
+
+  p {
+    font-size: 1.5rem;
+  }
+
+  .main-container .main-head .main-head__title {
+    font-size: 4.5rem;
+  }
+
+  .main-container .main-head .main-head__second-title {
+    font-size: 2rem;
+  }
+
+  .main-container .article-left .title-snowboarding-and-skiing,
+.main-container .article-right .title-snowboarding-and-skiing,
+.main-container .main-article .main-article_title,
+.main-container .main-bottom-article .main-bottom-article__title {
+    font-size: 2rem;
+  }
+
+  .header .nav-btn {
+    display: block;
+  }
+
+  .header .nav-laptop-width {
+    display: none;
+  }
+
+  .main-pictures {
+    flex-direction: column;
+  }
+
+  .main-down-article {
+    background: #f0f8ff;
+    padding: 0 3rem 5rem;
+  }
+}
+/*# sourceMappingURL=style.scss.map */
+
+/*# sourceMappingURL=style.css.map */

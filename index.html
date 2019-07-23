@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="shortcut icon" type="imege/icon"
+        href="https://cdn4.iconfinder.com/data/icons/winter-gradient/58/045_Mountains-256.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="scripts.js" defer></script>
+    <title>FunWinter</title>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <section class="header-icon">
+            <img class="header-icon__image"
+                src="https://cdn4.iconfinder.com/data/icons/winter-gradient/58/045_Mountains-256.png">
+        </section>
+
+        <!-- Navigation bar for laptop -->
+        <nav class="nav-laptop-width">
+            <a class="nav-laptop-width-radius-and-padding nav-laptop-width__link" href="#">
+                <img class="nav-laptop-width__link_icon" src="img/Link-512.png"
+                    alt="link">Link</a>
+            <a class="nav-laptop-width-radius-and-padding nav-laptop-width__signUp" href="#"><strong>Sign Up</strong></a>
+            <a class="nav-laptop-width-radius-and-padding nav-laptop-width__logIn" href="#">Log In</a>
+        </nav>
+
+        <!-- Hamburger button -->
+        <div class="nav-btn">
+            <span class="nav-btn__line"></span>
+            <span class="nav-btn__line"></span>
+            <span class="nav-btn__line"></span>
+        </div>
+    </header>
+
+    <!-- Navigation bar for mobile phone  -->
+    <nav class="nav-mobile-width">
+        <a class="nav-mobile-width__sign-up" href="#">Sign Up</a>
+        <a class="nav-mobile-width__log-in" href="#">Log In</a>
+        <a class="nav-mobile-width__link" href="#">
+            <img class="nav__link_icon" src="img/Link-512.png" alt="link">Link</a>
+    </nav>
+
+    <!-- The container -->
+    <main class="main-container">
+        <section class="main-head">
+            <h1 class="main-head__title">FUN WINTER</h1>
+            <h2 class="main-head__second-title">Snowboarding VS Skiing</h2>
+        </section>
+
+        <!-- Article left -->
+        <aside class="article-left">
+            <h3 class="title-snowboarding-and-skiing">Snowboarding</h3>
+            <p>Snowboarding is a recreational activity and Winter Olympic and Paralympic sport that involves descending
+                a snow-covered slope while standing on a snowboard attached to a rider's feet.</p>
+            <h4>Styles:</h4>
+            <p>"Freeriding" is a style without a set of governing rules or set course, typically on natural, un-groomed
+                terrain. The basic allows for various snowboarding styles in a fluid motion and spontaneity through
+                naturally rugged terrain. It can be similar to freestyle with the exception that no man-made features
+                are utilized. See also Backcountry snowboarding.</p>
+            <p>"Freestyle" snowboarding is any riding that includes performing tricks. In freestyle, the rider utilizes
+                natural and man-made features such as rails, jumps, boxes, and innumerable others to perform tricks. It
+                is a popular all-inclusive concept that distinguishes the creative aspects of snowboarding, in contrast
+                to a style like alpine snowboarding.</p>
+        </aside>
+
+        <!-- The slider -->
+        <section class="main-slider">
+            <div id="slider" class="carousel slide" data-ride="carousel">
+
+                <!-- Indicators -->
+                <ul class="carousel-indicators">
+                    <li data-target="#slider" data-slide-to="0" class="active"></li>
+                    <li data-target="#slider" data-slide-to="1"></li>
+                    <li data-target="#slider" data-slide-to="2"></li>
+                    <li data-target="#slider" data-slide-to="3"></li>
+                    <li data-target="#slider" data-slide-to="4"></li>
+                </ul>
+
+                <!-- The slideshow -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100"
+                            src="https://static.lakana.com/mmm-global-us-east-1/photo/2018/01/18/skiing-snowboarding-snow-winter-outdoor-sport_1516301023093_10041447_ver1.0_1280_720.jpg">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100"
+                            src="https://i.guim.co.uk/img/static/sys-images/Guardian/Pix/audio/video/2014/2/5/1391618272078/U.S.-snowboarder-Shaun-Wh-018.jpg?width=1280&quality=85&auto=format&fit=max&s=25390ce834b2238582011f4faf65d788">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100"
+                            src="https://images.wallpaperscraft.com/image/snowboarding_trick_jump_mountain_extreme_79976_1280x720.jpg"
+                            alt="">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100"
+                            src="https://www.liveabout.com/thmb/uIXwzyWqB8GxG57Z6xhPfWe8wbk=/1280x720/smart/filters:no_upscale()/Ski_dv617083-56a87df25f9b58b7d0f2d760.jpg"
+                            alt="">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100"
+                            src="https://www.chaletlivigno.it/media/allegati/00/142/ci/images/show-maestri-livigno-c-1280x720-4.jpg"
+                            alt="">
+                    </div>
+                </div>
+
+                <!-- Left and right controls -->
+                <a class="carousel-control-prev" href="#slider" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#slider" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+            </div>
+        </section>
+
+        <!-- Article right -->
+        <aside class="article-right">
+            <h3 class="title-snowboarding-and-skiing">Skiing</h3>
+            <p>Skiing can be a means of transport, a recreational activity or a competitive winter sport in which the
+                participant uses skis to glide on snow. Many types of competitive skiing events are recognized by the
+                International Olympic Committee (IOC), and the International Ski Federation (FIS).</p>
+            <h4>Types:</h4>
+            <p>"Alpine" Also called "downhill skiing", Alpine skiing typically takes place on a piste at a ski resort.
+                It is
+                characterized by fixed-heel bindings that attach at both the toe and the heel of the skier's boot. Ski
+                lifts, including chairlifts, bring skiers up the slope. Backcountry skiing can be accessed by
+                helicopter, snowcat, hiking and snowmobile. Facilities at resorts can include night skiing, après-ski,
+                and glade skiing under the supervision of the ski patrol and the ski school. Alpine skiing branched off
+                from the older Nordic type of skiing around the 1920s when the advent of ski lifts meant that it was not
+                necessary to walk any longer. Alpine equipment has specialized to the point where it can now only be
+                used with the help of lifts.</p>
+            <p>"Nordic" disciplines include cross-country skiing and ski jumping, which both use bindings that attach
+                at the toes of the skier's boots but not at the heels. Cross-country skiing may be practiced on groomed
+                trails or in undeveloped backcountry areas. Ski jumping is practiced in certain areas that are reserved
+                exclusively for ski jumping.</p>
+            <p>"Telemark" skiing is a ski turning technique and FIS-sanctioned discipline, which is named after the
+                Telemark region of Norway. It uses equipment similar to Nordic skiing, where the ski bindings are
+                attached only at the toes of the ski boots, allowing the skier's heel to be raised throughout the turn.
+            </p>
+        </aside>
+
+        <!-- Main article -->
+        <section class="main-article">
+            <h3 class="main-article_title">Olympic Games</h3>
+            <div class="main-article__columns">
+                <p>The modern Olympic Games or Olympics are leading international sporting events featuring summer and
+                    winter sports competitions in which thousands of athletes from around the world participate in a
+                    variety of competitions. The Olympic Games are considered the world's foremost sports competition
+                    with more than 200 nations participating.</p>
+                <p>The Olympic Games are held every four years, with the
+                    Summer and Winter Games alternating by occurring every four years but two years apart. Their
+                    creation was inspired by the ancient Olympic Games, which were held in Olympia, Greece, from the 8th
+                    century BC to the 4th century AD. Baron Pierre de Coubertin founded the International Olympic
+                    Committee (IOC) in 1894, leading to the first modern Games in Athens in 1896. The IOC is the
+                    governing body of the Olympic Movement, with the Olympic Charter defining its structure and
+                    authority.</p>
+            </div>
+        </section>
+
+        <!-- Main pictures -->
+        <section class="main-pictures">
+            <div class="main-picture__item">
+                <img src="https://www.actionhub.com/wp-content/uploads/2013/09/Snowboarding-400x300.jpg">
+                <aside class="middle-article">
+                    <h2>Snowboarding was invented in the 1960s and started out as snurfing.</h2>
+                    <p>Yes, you read that right. A fellow named Sherman Poppen, an engineer living in Muskegon,
+                        Michigan, strapped two skis together and added some rope for steering. His wife called it a
+                        snurfer, or snow surfing.</p>
+                </aside>
+            </div>
+            <div class="main-picture__item">
+                <img src="https://nordictravel.ua/image/cache/data/ski/bjorkliden/bln_skidakning-400x300.jpg">
+                <aside class="middle-article">
+                    <h2>Skiing was originally a form of transportation in Europe before it became a sport.</h2>
+                    <p>The oldest documented evidence of skiing is found in the region of Norway and Sweden from
+                        primitive carvings dating back to 5000 B.C. Until the 1800’s skiing was primarily used only for
+                        transport, it was after the turn of the 18th century that it became a recreational sport.
+                        Commercially the popularity of skiing holidays took off in the 19th century which increased
+                        substantially during the mid-1900s until today.</p>
+                </aside>
+            </div>
+        </section>
+
+        <!-- Bottom article -->
+        <section class="main-bottom-article">
+            <h3 class="main-bottom-article__title">International Ski Federation rules for ski and snowboarding conduct
+            </h3>
+            <p>1) Respect for others on skis and snowboards: A skier or snowboarder must behave in such a way that
+                he does not endanger or prejudice others.</p>
+            <p>2) Control of speed and behavior: A skier or snowboarder must move in control. They must adapt their
+                speed and manner of skiing or snowboarding to their personal ability and to the prevailing
+                conditions of terrain, snow and weather, as well as to the density of traffic.</p>
+            <p>3) Choice of ski or snowboarding route: A skier or snowboarder coming from behind (who are higher up
+                the slope) must choose his or her route in such a way that he or she does not endanger skiers or
+                snowboarders ahead.</p>
+            <p>4) Overtaking during skiing or snowboarding exercise: A skier or snowboarder may overtake another
+                skier or snowboarder above or below, and to the right or to the left, provided that he or she leaves
+                enough space for the overtaken skier or snowboarder to make any voluntary or involuntary movement.
+            </p>
+            <p>5) Entering, starting and moving upwards: A skier or snowboarder either: entering a marked run,
+                starting again after stopping, or moving upwards or crossing on the slopes, must look up and down
+                the slopes so that he or she can move without endangering themselves or others.</p>
+            <p>6) Stopping on the piste: Unless absolutely necessary, a skier or snowboarder must avoid stopping on
+                the piste in narrow places or where visibility is restricted. After a fall in such a place, a skier
+                or snowboarder must move clear of the piste as soon as possible.</p>
+            <p>7) Walking up or downhill for skiing or snowboarding: A skier or snowboarder either climbing or
+                descending on foot must keep to the side of the piste.</p>
+            <p>8) Respect for signs and markings: A skier or snowboarder must respect all signs and markings. This
+                includes slope information, weather conditions, and the conditions of the slopes and snow.</p>
+            <p>9) Assistance following ski or snowboarding accidents: At accidents, every skier or snowboarder is
+                duty bound to assist.</p>
+            <p>10) Identification after a ski or snowboarding accident: Any witness, whether a responsible party or
+                not, must exchange names and addresses following an accident. They must identify themselves to Piste
+                Control, as well as to any others involved in the ski or snowboarding accident.</p>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <center>
+            <aside>Content, layout, design: <a class="footer-link-name" href="#">Dmytro Resler</a>.
+            </aside>
+        </center>
+    </footer>
+</body>
+
+</html>
