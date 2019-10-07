@@ -1,17 +1,21 @@
 "use strict";
 
-const navbBtn = document.querySelector('.nav-btn');
-const mobileWidth = document.querySelector('.nav-mobile-width');
-const mainConteiner = document.querySelector('.main-container');
+const navbBtn = document.querySelector('.nav-btn'),
+      mainContainer = document.querySelector('.main-container');
+
+navbBtn.addEventListener('mouseenter', function() {
+        this.classList.toggle('open');
+});
+
+navbBtn.addEventListener('mouseleave', function() {
+    this.classList.remove('open'); 
+});
 
 navbBtn.addEventListener('click', function() {
-    if (mobileWidth.classList) {
-        this.classList.toggle('open');
-        mobileWidth.classList.toggle('nav-mobile-width-active');
-        mainConteiner.classList.toggle('main-container-active');
-    } else {
-        this.classList.remove('open'); 
-        mobileWidth.classList.remove('nav-mobile-width-active');
-        mainConteiner.classList.remove('main-container-active');
-    }    
+    if (mainContainer.classList) {
+        mainContainer.classList.toggle('main-container-open');
+    }
+    else {
+        mainContainer.classList.remove('main-container-open');
+    }
 });

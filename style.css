@@ -11,6 +11,11 @@ html {
 body {
   width: 100%;
   height: 100%;
+  background-image: url("https://images.wallpaperscraft.com/image/mountains_lake_tops_top_view_119133_1920x1080.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
 }
 
 .font-weight {
@@ -27,144 +32,8 @@ img {
   height: auto;
 }
 
-.header {
-  background: #262626;
-  top: 0rem;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  padding: 0.5rem;
-}
-.header .header-icon {
-  display: inherit;
-  align-items: center;
-}
-.header .header-icon .header-icon__image {
-  width: 2.5rem;
-}
-.header .nav-laptop-width {
-  display: inherit;
-  align-items: baseline;
-}
-.header .nav-laptop-width .nav-laptop-width-radius-and-padding {
-  border-radius: 0.5rem;
-}
-.header .nav-laptop-width .nav-laptop-width__link_icon {
-  width: 1.6rem;
-  margin-right: 0.3rem;
-}
-.header .nav-laptop-width .nav-laptop-width__link {
-  border: 2px solid #404040;
-  color: #fff;
-  padding: 0.5rem;
-}
-.header .nav-laptop-width .nav-laptop-width__signUp {
-  margin: 0 1rem;
-  background: #2fb45a;
-  color: black;
-  padding: 0.7rem;
-}
-.header .nav-laptop-width .nav-laptop-width__logIn {
-  background: #404040;
-  color: #fff;
-  padding: 0.7rem;
-}
-.header .nav-laptop-width .nav-laptop-width__link:hover,
-.header .nav-laptop-width .nav-laptop-width__signUp:hover,
-.header .nav-laptop-width .nav-laptop-width__logIn:hover {
-  text-decoration: none;
-}
-.header .nav-laptop-width .nav-laptop-width__link:hover,
-.header .nav-laptop-width .nav-laptop-width__logIn:hover {
-  background: #545759;
-  color: #fff;
-}
-.header .nav-laptop-width .nav-laptop-width__signUp:hover {
-  background: #2ec75f;
-  color: black;
-}
-.header .nav-btn {
-  display: none;
-  cursor: pointer;
-}
-.header .nav-btn .nav-btn__line {
-  position: relative;
-  display: block;
-  width: 20px;
-  height: 3px;
-  background: #2fb45a;
-  opacity: 1;
-  transition: 0.25s ease-in-out;
-  transform-origin: left center;
-  -webkit-transition: 0.25s ease-in-out;
-  -webkit-transform-origin: left center;
-}
-.header .nav-btn .nav-btn__line:nth-child(1) {
-  top: 6px;
-}
-.header .nav-btn .nav-btn__line:nth-child(2) {
-  top: 8px;
-}
-.header .nav-btn .nav-btn__line:nth-child(3) {
-  top: 10px;
-}
-.header .open .nav-btn__line:nth-child(1) {
-  transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
-  top: 3px;
-  margin-left: 5px;
-}
-.header .open .nav-btn__line:nth-child(2) {
-  opacity: 0;
-}
-.header .open .nav-btn__line:nth-child(3) {
-  transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg);
-  top: 11px;
-  margin-left: 5px;
-}
-
-.nav-mobile-width {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  transition: 0.5s;
-  transform-origin: right top;
-  transform: scaleY(0) translateX(15%);
-  -webkit-transition: 0.5s;
-  -webkit-transform-origin: right top;
-  -webkit-transform: scaleY(0) translateX(15%);
-}
-.nav-mobile-width .nav-mobile-width__sign-up,
-.nav-mobile-width .nav-mobile-width__log-in,
-.nav-mobile-width .nav-mobile-width__link {
-  background: #262626;
-  color: #fff;
-  padding: 1rem;
-  display: inherit;
-  justify-content: flex-end;
-  width: 8rem;
-  font-size: 1.5rem;
-}
-.nav-mobile-width .nav-mobile-width__sign-up:hover {
-  background: #2fb45a;
-  color: #fff;
-  text-decoration: none;
-}
-.nav-mobile-width .nav-mobile-width__log-in:hover,
-.nav-mobile-width .nav-mobile-width__link:hover {
-  background: #545759;
-  color: #fff;
-  text-decoration: none;
-}
-.nav-mobile-width .nav__link_icon {
-  width: 1.6rem;
-  margin-right: 0.3rem;
-}
-
-.nav-mobile-width-active {
-  transform: scaleY(1);
-  -webkit-transform: scaleY(1);
+.head {
+  grid-area: head;
 }
 
 .main-head {
@@ -199,17 +68,70 @@ footer {
   grid-area: footer;
 }
 
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  z-index: -1;
+}
+.nav .nav-singUp,
+.nav .nav-logIn,
+.nav .nav-link {
+  display: flex;
+  justify-content: flex-end;
+  width: 9rem;
+  font-size: 1.7rem;
+  font-weight: 900;
+  padding: 1rem;
+  color: #2fb45a;
+  border-right: 5px solid #262626;
+  margin-bottom: 1rem;
+}
+.nav .nav-singUp:hover {
+  color: green;
+}
+
+.open {
+  transform: rotate(12deg);
+}
+
 .main-container {
-  transition: 0.5s;
-  -webkit-transition: 0.5s;
-  margin-top: -10.7rem;
+  transform-origin: left top;
+  transition: transform 1.25s ease 0s;
   display: grid;
   grid-template-columns: 1fr 3fr 1fr;
-  grid-template-areas: "main-head main-head main-head" "article-left main-slider article-right" "article-left main-article article-right" "article-left main-pictures article-right" "article-left main-bottom-article  article-right" "footer footer footer";
+  grid-template-areas: "head head head" "main-head main-head main-head" "article-left main-slider article-right" "article-left main-article article-right" "article-left main-pictures article-right" "article-left main-bottom-article  article-right" "footer footer footer";
+}
+.main-container .head {
+  background: #262626;
+  top: 0rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+}
+.main-container .head .header-icon {
+  display: flex;
+  align-items: center;
+}
+.main-container .head .header-icon .header-icon__image {
+  width: 2.5rem;
+}
+.main-container .head .nav-btn {
+  display: flex;
+  cursor: pointer;
+}
+.main-container .head .nav-btn .nav-btn__image {
+  width: 2.5rem;
+  background-color: #2fb45a;
 }
 .main-container .main-head {
   text-align: center;
   padding: 3rem;
+  background-color: #fff;
 }
 .main-container .main-head .main-head__title {
   font-size: 7rem;
@@ -277,34 +199,42 @@ footer {
 .main-container .main-bottom-article .main-bottom-article-title {
   margin-top: 1rem;
 }
-
-.main-container-active {
-  margin-top: 0rem;
-}
-
-footer {
+.main-container footer {
   padding: 3rem;
   background: #262626;
   color: #fff;
   font-size: 1.5rem;
 }
-footer .footer-link-name {
+.main-container footer .footer-link-name {
   text-decoration: underline;
   color: #fff;
 }
-footer .footer-link-name:hover {
-  color: #fff;
+
+.main-container-open {
+  transform: rotate(10deg);
 }
 
 /*Responsive for tablet*/
 @media screen and (max-width: 768px) {
   .main-container {
     grid-template-columns: 1fr 2fr;
-    grid-template-areas: "main-head main-head" "article-left main-slider" "article-left main-article" "article-right main-pictures" "article-right main-bottom-article" "footer footer";
+    grid-template-areas: "head head" "main-head main-head" "article-left main-slider" "article-left main-article" "article-right main-pictures" "article-right main-bottom-article" "footer footer";
   }
 
   html {
     font-size: 14px;
+  }
+
+  .nav .nav-singUp,
+.nav .nav-logIn,
+.nav .nav-link {
+    width: 7rem;
+    font-size: 1.4rem;
+    padding: 0.5rem;
+  }
+
+  .main-container-open {
+    transform: rotate(15deg);
   }
 
   .main-pictures {
@@ -315,7 +245,7 @@ footer .footer-link-name:hover {
 @media screen and (max-width: 500px) {
   .main-container {
     grid-template-columns: 1fr;
-    grid-template-areas: "main-head" "main-slider" "article-left" "article-right" "main-article" "main-pictures" "main-bottom-article" "footer";
+    grid-template-areas: "head" "main-head" "main-slider" "article-left" "article-right" "main-article" "main-pictures" "main-bottom-article" "footer";
   }
 
   html {
@@ -324,6 +254,19 @@ footer .footer-link-name:hover {
 
   p {
     font-size: 1.5rem;
+  }
+
+  .nav .nav-singUp,
+.nav .nav-logIn,
+.nav .nav-link {
+    width: 7rem;
+    font-size: 1.4rem;
+    padding: 0.5rem;
+    border-right: 3px solid #404040;
+  }
+
+  .main-container-open {
+    transform: rotate(18deg);
   }
 
   .main-container .main-head .main-head__title {
@@ -339,14 +282,6 @@ footer .footer-link-name:hover {
 .main-container .main-article .main-article_title,
 .main-container .main-bottom-article .main-bottom-article__title {
     font-size: 2rem;
-  }
-
-  .header .nav-btn {
-    display: block;
-  }
-
-  .header .nav-laptop-width {
-    display: none;
   }
 
   .main-pictures {
