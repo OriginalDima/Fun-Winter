@@ -2,9 +2,10 @@
 
 const navbBtn = document.querySelector('.nav-btn'),
       mainContainer = document.querySelector('.main-container'),
-      navBar = document.querySelector('.nav-bar');
+      navBar = document.querySelector('.nav-bar'),
+      arrowBtn = document.querySelector('.arrow-btn');
 
-      console.log(navBar);
+      console.log(arrowBtn);
       
 
 navbBtn.addEventListener('mouseenter', function() {
@@ -25,3 +26,8 @@ navbBtn.addEventListener('click', function() {
         navBar.classList.remove('nav-bar-open');
     }
 });
+
+arrowBtn.addEventListener('click', function() {
+    window.scrollTo(0, 0);
+});
+

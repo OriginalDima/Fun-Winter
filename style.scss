@@ -14,6 +14,7 @@ $primary-background-nav-element: #262626;
 
 html {
   font-size: 16px;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -75,6 +76,24 @@ img {
 
 footer {
   grid-area: footer;
+}
+
+.arrow {
+  position: fixed;
+  margin-top: 40%;
+  margin-left: 80%;
+  opacity: 0.1;
+}
+
+.arrow-btn {
+  width: 2.5rem;
+  border-radius: 50%;
+  background-color: #2fb45a;
+  cursor: pointer;
+}
+
+.arrow:hover {
+  opacity: 1;
 }
 
 .nav-bar {
@@ -276,9 +295,14 @@ footer {
     font-size: 14px;
   }
 
-  .nav .nav-singUp,
-  .nav .nav-logIn,
-  .nav .nav-link {
+  .arrow {
+    margin-top: 90%;
+    margin-left: 90%;    
+  }
+
+  .nav-bar .nav-bar-singUp,
+  .nav-bar .nav-bar-logIn,
+  .nav-bar .nav-bar-link {
     width: 7rem;
     font-size: 1.4rem;
     padding: 0.5rem;
@@ -316,9 +340,15 @@ footer {
     font-size: 1.5rem;
   }
 
-  .nav .nav-singUp,
-  .nav .nav-logIn,
-  .nav .nav-link {
+  .arrow {
+    margin-top: 187%;
+    margin-left: 85%;  
+  }
+
+
+  .nav-bar .nav-bar-singUp,
+  .nav-bar .nav-bar-logIn,
+  .nav-bar .nav-bar-link {
     width: 7rem;
     font-size: 1.4rem;
     padding: 0.5rem;
@@ -326,7 +356,7 @@ footer {
   }
 
   .main-container-open {
-    transform: rotate(18deg);
+    transform: rotate(19deg);
   }
 
   .main-container .main-head .main-head__title {
