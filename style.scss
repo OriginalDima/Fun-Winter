@@ -40,6 +40,7 @@ img {
   height: auto;
 }
 
+
 .head {
   grid-area: head;
 }
@@ -76,19 +77,18 @@ footer {
   grid-area: footer;
 }
 
-.nav {
-  display: flex;
+.nav-bar {
+  display: none;
   justify-content: flex-end;
   flex-direction: column;
   position: absolute;
   top: 0px;
   right: 0px;
-  z-index: -1;
   
-  .nav-singUp,
-  .nav-logIn,
-  .nav-link {
-    display: flex;
+  .nav-bar-singUp,
+  .nav-bar-logIn,
+  .nav-bar-link {
+    display: inherit !important;
     justify-content: flex-end;
     width: 9rem;
     font-size: 1.7rem;
@@ -97,11 +97,19 @@ footer {
     color: $primary-color-nav-element;    
     border-right: 5px solid $primary-background-nav-element;
     margin-bottom: 1rem;
+    margin-right: 5px;
+    text-decoration: none;
   }
 
-  .nav-singUp:hover {
+  .nav-bar-singUp:hover,
+  .nav-bar-logIn:hover,
+  .nav-bar-link:hover {
     color: green;
   }
+}
+
+.nav-bar-open {
+  display: flex;
 }
 
 .open {
