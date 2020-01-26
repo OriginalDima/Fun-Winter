@@ -32,8 +32,8 @@ body {
 }
 
 p {
-  padding: 0 0 1rem 0;
   font-family: $font-stack-paragraph;
+  margin-bottom: 0.5rem !important;
 }
 
 img {
@@ -126,10 +126,6 @@ footer {
     text-decoration: none;
   }
 
-  .nav-bar-open {
-    display: flex;
-  }
-
   .nav-bar-singUp:hover,
   .nav-bar-logIn:hover,
   .nav-bar-link:hover {
@@ -137,6 +133,9 @@ footer {
   }
 }
 
+.nav-bar-open {
+  display: flex;
+}
 // Navigation bar for phone
 
 .phone-nav-bar {
@@ -160,18 +159,18 @@ footer {
     font-size: 1.7rem;
     font-weight: 900;
     padding: 0.5rem;
-    width: 8rem;
+    width: 10rem;
+  }
+
+  .phone-nav-bar-singUp:hover,
+  .phone-nav-bar-logIn:hover,
+  .phone-nav-bar-link:hover {
+    color: $primary-color-nav-element;  
   }
 }
 
 .phone-nav-bar-open {
   transform: scaleY(1);
-}
-
-.phone-nav-bar-singUp:hover,
-.phone-nav-bar-logIn:hover,
-.phone-nav-bar-link:hover {
-  color: $primary-color-nav-element;  
 }
 
 .main-container {
@@ -243,7 +242,7 @@ footer {
       font-family: Arial, Sans-Serif;
       font-size: 1.7rem;
       text-align: center;
-      margin: 0 0 2rem 0;
+      margin: 0 0 1rem 0;
     }
   }
 
