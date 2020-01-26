@@ -12,11 +12,11 @@ const navbBtn = document.querySelector('.nav-btn'),
       
 
 navbBtn.addEventListener('mouseenter', function() {
-    this.classList.toggle('open');
+    this.classList.toggle('btnOpen');
 });
 
 navbBtn.addEventListener('mouseleave', function() {
-    this.classList.remove('open'); 
+    this.classList.remove('btnOpen'); 
 });
 
 navbBtn.addEventListener('click', function() {
